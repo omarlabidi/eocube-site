@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EOCube — l’observation de la Terre au service du climat</title>
+<meta name="description" content="Earth Observation Cube (Tunis) met l’observation de la Terre et l’intelligence artificielle au service de l’adaptation au changement climatique.">
+<meta property="og:title" content="EOCube — Voir la Terre sous toutes ses facettes">
+<meta property="og:description" content="Observation de la Terre et IA au service de l’adaptation au changement climatique.">
+<meta property="og:image" content="assets/eocube-mark.png">
+<link rel="icon" type="image/png" href="favicon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+html{scroll-behavior:smooth}
+a{color:#0B3A9E}a:hover{color:#082B75}
+</style>
+
+</head>
+<body>
+
+<div id="top" style="width: 100%; font-family: Inter, sans-serif; color: #0E1A33; background: #FFFFFF">
+
+<header style="background: #02040A; border-bottom: 1px solid #0F1C38">
+<div style="max-width: 1200px; margin: 0 auto; padding: 0 24px; box-sizing: border-box; min-height: 76px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 32px; padding-top: 12px; padding-bottom: 12px">
+<a href="#top" aria-label="EOCube, accueil" style="display: flex; align-items: center; gap: 12px; text-decoration: none">
+<span style="display: block; width: 40px; height: 40px; overflow: hidden; flex: none; border-radius: 8px; background: #FFFFFF"><img src="assets/eocube-mark.png" alt="" style="display: block; width: 40px; height: 40px"></span>
+<span style="font-family: Jost, sans-serif; font-weight: 500; font-size: 20px; letter-spacing: 0.42em; color: #EAF1FF">EOCube</span>
+</a>
+<nav aria-label="Navigation principale" style="display: flex; flex-wrap: wrap; align-items: center; gap: 4px 24px">
+<a href="#mission" style="font-family: Inter, sans-serif; font-size: 15px; color: #C9D6EE; text-decoration: none; padding: 10px 4px">Mission</a><a href="#solutions" style="font-family: Inter, sans-serif; font-size: 15px; color: #C9D6EE; text-decoration: none; padding: 10px 4px">Solutions</a><a href="#approche" style="font-family: Inter, sans-serif; font-size: 15px; color: #C9D6EE; text-decoration: none; padding: 10px 4px">Approche</a><a href="#equipe" style="font-family: Inter, sans-serif; font-size: 15px; color: #C9D6EE; text-decoration: none; padding: 10px 4px">Équipe</a><a href="#contact" style="font-family: Inter, sans-serif; font-size: 15px; color: #C9D6EE; text-decoration: none; padding: 10px 4px">Contact</a>
+<span style="font-size: 14px; color: #7F93B8"><a href="#" style="color: #FFFFFF; text-decoration: none; font-weight: 600">FR</a> · <a href="#" style="color: #A9B8D4; text-decoration: none">EN</a></span>
+</nav>
+</div>
+</header>
+
+<section aria-labelledby="hero-title" style="background: #02040A; color: #EAF1FF; overflow: hidden">
+<div style="max-width: 1200px; margin: 0 auto; padding: 0 24px; box-sizing: border-box; display: flex; flex-wrap: wrap; align-items: center; gap: 24px; padding-top: 40px; padding-bottom: 56px">
+<div style="flex: 1 1 420px; display: flex; flex-direction: column; gap: 24px; min-width: 0">
+<p style="margin: 0; font-size: 13px; font-weight: 500; letter-spacing: 0.32em; text-transform: uppercase; color: #8FB4FF">Earth Observation Cube · Tunis</p>
+<h1 id="hero-title" style="margin: 0; font-family: Jost, sans-serif; font-weight: 500; letter-spacing: -0.01em; font-size: clamp(40px, 5.4vw, 68px); line-height: 1.05; color: #FFFFFF">Voir la Terre sous toutes ses facettes.</h1>
+<p style="margin: 0; font-size: 19px; line-height: 1.6; color: #B9C7E2; max-width: 34em">Nous mettons l’observation de la Terre et l’intelligence artificielle au service de l’adaptation au changement climatique, pour les institutions qui protègent les populations et gèrent l’eau, les forêts et les terres agricoles.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 14px; padding-top: 8px">
+<a href="#solutions" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 26px; border-radius: 999px; background: #FFFFFF; color: #0B3A9E; font-weight: 600; font-size: 16px; text-decoration: none">Nos solutions</a>
+<a href="#contact" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 26px; border-radius: 999px; border: 1px solid #3D5A94; color: #EAF1FF; font-weight: 500; font-size: 16px; text-decoration: none">Nous écrire</a>
+</div>
+</div>
+<div style="flex: 1 1 480px; position: relative; height: clamp(380px, 92vw, 600px); min-width: 0">
+<canvas data-eocube="1" role="img" aria-label="Huit cubes autour de la Terre, en rotation lente sur un axe incliné" style="position: absolute; inset: 0; display: block; width: 100%; height: 100%"></canvas>
+</div>
+</div>
+</section>
+
+<section id="mission" aria-labelledby="mission-title" style="padding: 96px 0">
+<div style="max-width: 1200px; margin: 0 auto; padding: 0 24px; box-sizing: border-box; display: flex; flex-direction: column; gap: 48px">
+<div style="display: flex; flex-direction: column; gap: 16px; max-width: 760px">
+<p style="margin: 0; font-size: 13px; font-weight: 600; letter-spacing: 0.24em; text-transform: uppercase; color: #0B3A9E">Notre mission depuis 2022</p>
+<h2 id="mission-title" style="margin: 0; font-family: Jost, sans-serif; font-weight: 500; letter-spacing: -0.01em; font-size: clamp(32px, 3.6vw, 46px); line-height: 1.15">Des outils utiles, là où le climat frappe déjà.</h2>
+<p style="margin: 0; font-size: 18px; line-height: 1.65; color: #4A5872">Inondations, feux de forêt, sécheresse : les institutions qui y font face ont besoin d’informations fiables, à jour et faciles à utiliser. Nous construisons ces outils avec elles, d’abord en Tunisie, pour les partager ensuite avec d’autres pays.</p>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 32px">
+<div style="flex: 1 1 260px; display: flex; flex-direction: column; gap: 10px; border-top: 2px solid #0B3A9E; padding-top: 20px">
+<span style="font-family: Inter, sans-serif; font-size: 13px; font-weight: 600; color: #0B3A9E; letter-spacing: 0.1em">01</span>
+<h3 style="margin: 0; font-family: Jost, sans-serif; font-weight: 500; letter-spacing: -0.01em; font-size: 26px; color: #0E1A33">Anticiper</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #4A5872">Prévoir les crues et les feux, estimer l’exposition des personnes et des biens, alerter à temps.</p>
+</div>
+<div style="flex: 1 1 260px; display: flex; flex-direction: column; gap: 10px; border-top: 2px solid #0B3A9E; padding-top: 20px">
+<span style="font-family: Inter, sans-serif; font-size: 13px; font-weight: 600; color: #0B3A9E; letter-spacing: 0.1em">02</span>
+<h3 style="margin: 0; font-family: Jost, sans-serif; font-weight: 500; letter-spacing: -0.01em; font-size: 26px; color: #0E1A33">Mesurer</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #4A5872">Occupation des sols, biomasse, carbone, besoins en eau : une connaissance du territoire mise à jour en continu.</p>
+</div>
+<div style="flex: 1 1 260px; display: flex; flex-direction: column; gap: 10px; border-top: 2px solid #0B3A9E; padding-top: 20px">
+<span style="font-family: Inter, sans-serif; font-size: 13px; font-weight: 600; color: #0B3A9E; letter-spacing: 0.1em">03</span>
+<h3 style="margin: 0; font-family: Jost, sans-serif; font-weight: 500; letter-spacing: -0.01em; font-size: 26px; color: #0E1A33">Piloter</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #4A5872">Missions de terrain, contrôle qualité et suivi des stratégies et des financements climat.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="solutions" aria-labelledby="sol-title" style="background: #F3F6FB; padding: 96px 0">
+<div style="max-width: 1200px; margin: 0 auto; padding: 0 24px; box-sizing: border-box; display: flex; flex-direction: column; gap: 40px">
+<div style="display: flex; flex-direction: column; gap: 16px; max-width: 760px">
+<p style="margin: 0; font-size: 13px; font-weight: 600; letter-spacing: 0.24em; text-transform: uppercase; color: #0B3A9E">Solutions</p>
+<h2 id="sol-title" style="margin: 0; font-family: Jost, sans-serif; font-weight: 500; letter-spacing: -0.01em; font-size: clamp(32px, 3.6vw, 46px); line-height: 1.15">Six solutions, un même regard sur le territoire.</h2>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 20px">
+<article style="background: #FFFFFF; border: 1px solid #DFE6F1; border-radius: 14px; padding: 28px; display: flex; flex-direction: column; gap: 14px">
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0B3A9E" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 17c2.5 0 2.5-2 5-2s2.5 2 5 2 2.5-2 5-2 2.5 2 3 2"/><path d="M3 21c2.5 0 2.5-2 5-2s2.5 2 5 2 2.5-2 5-2 2.5 2 3 2"/><path d="M12 3v8"/><path d="M8.5 7.5 12 11l3.5-3.5"/></svg><span style="font-family: Inter, sans-serif; font-size: 12px; font-weight: 500; color: #0B3A9E; background: #E7EEFA; border-radius: 999px; padding: 4px 10px">En développement</span></div>
+<h3 style="margin: 0; font-family: Jost, sans-serif; font-weight: 500; letter-spacing: -0.01em; font-size: 22px; color: #0E1A33">SAYL · Alerte précoce</h3>
+<p style="margin: 0; font-size: 15px; line-height: 1.6; color: #4A5872">Prévision des crues de quelques heures à quelques jours sur toute la Tunisie, à partir des modèles météo et de l’exposition des habitations. Volet feux de forêt en préparation.</p>
+</article>
+<article style="background: #FFFFFF; border: 1px solid #DFE6F1; border-radius: 14px; padding: 28px; display: flex; flex-direction: column; gap: 14px">
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0B3A9E" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2 3 7v10l9 5 9-5V7z"/><path d="M3 7l9 5 9-5"/><path d="M12 12v10"/></svg><span style="font-family: Inter, sans-serif; font-size: 12px; font-weight: 500; color: #0B3A9E; background: #E7EEFA; border-radius: 999px; padding: 4px 10px">Conception</span></div>
+<h3 style="margin: 0; font-family: Jost, sans-serif; font-weight: 500; letter-spacing: -0.01em; font-size: 22px; color: #0E1A33">Data Cube & occupation des sols</h3>
+<p style="margin: 0; font-size: 15px; line-height: 1.6; color: #4A5872">Un cube de données national et une carte d’occupation des sols orientée objet : segmentation et classification par IA, arbres isolés, biomasse, besoins en eau, sec ou irrigué.</p>
+</article>
+<article style="background: #FFFFFF; border: 1px solid #DFE6F1; border-radius: 14px; padding: 28px; display: flex; flex-direction: column; gap: 14px">
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0B3A9E" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22v-6"/><path d="M12 2 6 11h3l-4 6h14l-4-6h3z"/></svg><span style="font-family: Inter, sans-serif; font-size: 12px; font-weight: 500; color: #0B3A9E; background: #E7EEFA; border-radius: 999px; padding: 4px 10px">Test terrain</span></div>
+<h3 style="margin: 0; font-family: Jost, sans-serif; font-weight: 500; letter-spacing: -0.01em; font-size: 22px; color: #0E1A33">Inventaire forestier vidéo 3D</h3>
+<p style="margin: 0; font-size: 15px; line-height: 1.6; color: #4A5872">Filmer l’unité d’échantillonnage, en déduire les volumes par photogrammétrie, les espèces et le sous-bois par vision artificielle, puis le carbone stocké.</p>
+</article>
+<article style="background: #FFFFFF; border: 1px solid #DFE6F1; border-radius: 14px; padding: 28px; display: flex; flex-direction: column; gap: 14px">
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0B3A9E" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3s-6 6.5-6 11a6 6 0 0 0 12 0c0-4.5-6-11-6-11z"/><path d="M9 15a3 3 0 0 0 3 3"/></svg><span style="font-family: Inter, sans-serif; font-size: 12px; font-weight: 500; color: #0B3A9E; background: #E7EEFA; border-radius: 999px; padding: 4px 10px">En préparation</span></div>
+<h3 style="margin: 0; font-family: Jost, sans-serif; font-weight: 500; letter-spacing: -0.01em; font-size: 22px; color: #0E1A33">SIG des réseaux d’irrigation</h3>
+<p style="margin: 0; font-size: 15px; line-height: 1.6; color: #4A5872">Maintenance, casses, usagers et bilan des volumes distribués, pour réduire les pertes d’eau dans les périmètres irrigués.</p>
+</article>
+<article style="background: #FFFFFF; border: 1px solid #DFE6F1; border-radius: 14px; padding: 28px; display: flex; flex-direction: column; gap: 14px">
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0B3A9E" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/><path d="M12 3v2M21 12h-2M12 21v-2M3 12h2"/></svg><span style="font-family: Inter, sans-serif; font-size: 12px; font-weight: 500; color: #0B3A9E; background: #E7EEFA; border-radius: 999px; padding: 4px 10px">En test</span></div>
+<h3 style="margin: 0; font-family: Jost, sans-serif; font-weight: 500; letter-spacing: -0.01em; font-size: 22px; color: #0E1A33">PilotOps</h3>
+<p style="margin: 0; font-size: 15px; line-height: 1.6; color: #4A5872">Pilotage des opérations de terrain et de production : recensements agricoles, restitution photogrammétrique, contrôle qualité, agents IA d’affectation des missions.</p>
+</article>
+<article style="background: #FFFFFF; border: 1px solid #DFE6F1; border-radius: 14px; padding: 28px; display: flex; flex-direction: column; gap: 14px">
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0B3A9E" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V10"/><path d="M10 20V4"/><path d="M16 20v-7"/><path d="M22 20H2"/></svg><span style="font-family: Inter, sans-serif; font-size: 12px; font-weight: 500; color: #0B3A9E; background: #E7EEFA; border-radius: 999px; padding: 4px 10px">Développée</span></div>
+<h3 style="margin: 0; font-family: Jost, sans-serif; font-weight: 500; letter-spacing: -0.01em; font-size: 22px; color: #0E1A33">Dash</h3>
+<p style="margin: 0; font-size: 15px; line-height: 1.6; color: #4A5872">Suivi-évaluation des stratégies, des axes jusqu’aux contrats, suivi par les décaissements. Pour les programmes financés par les fonds climat.</p>
+</article>
+</div>
+</div>
+</section>
+
+<section id="approche" aria-labelledby="app-title" style="background: #0A1E52; color: #EAF1FF; padding: 96px 0">
+<div style="max-width: 1200px; margin: 0 auto; padding: 0 24px; box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 48px 64px; align-items: flex-start">
+<div style="flex: 1 1 440px; display: flex; flex-direction: column; gap: 20px; min-width: 0">
+<p style="margin: 0; font-size: 13px; font-weight: 600; letter-spacing: 0.24em; text-transform: uppercase; color: #8FB4FF">Approche</p>
+<h2 id="app-title" style="margin: 0; font-family: Jost, sans-serif; font-weight: 500; letter-spacing: -0.01em; font-size: clamp(32px, 3.6vw, 46px); line-height: 1.15; color: #FFFFFF">Un socle commun, des modules construits une seule fois.</h2>
+<p style="margin: 0; font-size: 18px; line-height: 1.65; color: #B9C7E2">Chaque brique développée pour une solution sert aux autres : le moteur de risques sécurise les missions de terrain, la carte d’occupation des sols qualifie l’exposition aux crues, l’inventaire vidéo calibre la biomasse.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 10px; padding-top: 8px">
+<span style="font-family: Inter, sans-serif; font-size: 14px; color: #DCE6F8; border: 1px solid #2B4A8C; border-radius: 999px; padding: 8px 14px">Plateforme géospatiale</span><span style="font-family: Inter, sans-serif; font-size: 14px; color: #DCE6F8; border: 1px solid #2B4A8C; border-radius: 999px; padding: 8px 14px">Agents IA</span><span style="font-family: Inter, sans-serif; font-size: 14px; color: #DCE6F8; border: 1px solid #2B4A8C; border-radius: 999px; padding: 8px 14px">Vision géospatiale</span><span style="font-family: Inter, sans-serif; font-size: 14px; color: #DCE6F8; border: 1px solid #2B4A8C; border-radius: 999px; padding: 8px 14px">Moteur de risques</span><span style="font-family: Inter, sans-serif; font-size: 14px; color: #DCE6F8; border: 1px solid #2B4A8C; border-radius: 999px; padding: 8px 14px">Photogrammétrie &amp; 3D</span><span style="font-family: Inter, sans-serif; font-size: 14px; color: #DCE6F8; border: 1px solid #2B4A8C; border-radius: 999px; padding: 8px 14px">Qualité &amp; conformité</span><span style="font-family: Inter, sans-serif; font-size: 14px; color: #DCE6F8; border: 1px solid #2B4A8C; border-radius: 999px; padding: 8px 14px">Suivi-évaluation</span><span style="font-family: Inter, sans-serif; font-size: 14px; color: #DCE6F8; border: 1px solid #2B4A8C; border-radius: 999px; padding: 8px 14px">Data Cube Tunisie</span>
+</div>
+</div>
+<blockquote style="flex: 1 1 360px; margin: 0; border-left: 0; padding: 32px; border-radius: 16px; background: #0F2A6B; display: flex; flex-direction: column; gap: 16px">
+<p style="margin: 0; font-family: Jost, sans-serif; font-weight: 500; letter-spacing: -0.01em; font-size: 26px; line-height: 1.35; color: #FFFFFF">« L’État reste l’acteur central. Nous relions et valorisons les systèmes existants plutôt que d’en créer un de plus. »</p>
+<footer style="font-size: 14px; color: #A9B8D4">Notre principe de travail avec les institutions</footer>
+</blockquote>
+</div>
+</section>
+
+<section id="equipe" aria-labelledby="team-title" style="padding: 96px 0">
+<div style="max-width: 1200px; margin: 0 auto; padding: 0 24px; box-sizing: border-box; display: flex; flex-direction: column; gap: 40px">
+<div style="display: flex; flex-wrap: wrap; gap: 32px 64px">
+<div style="flex: 1 1 440px; display: flex; flex-direction: column; gap: 16px; min-width: 0">
+<p style="margin: 0; font-size: 13px; font-weight: 600; letter-spacing: 0.24em; text-transform: uppercase; color: #0B3A9E">Équipe &amp; expertise</p>
+<h2 id="team-title" style="margin: 0; font-family: Jost, sans-serif; font-weight: 500; letter-spacing: -0.01em; font-size: clamp(32px, 3.6vw, 46px); line-height: 1.15">30 ans d’observation de la Terre en Afrique.</h2>
+<p style="margin: 0; font-size: 18px; line-height: 1.65; color: #4A5872">Télédétection, SIG et intelligence artificielle, de l’Afrique du Nord à l’Afrique subsaharienne. Nos experts ont mené des missions pour le PNUE, la FAO, le PNUD et la Banque mondiale, avec des spécialistes métier de l’eau, de la forêt et de la qualité.</p>
+</div>
+<div style="flex: 1 1 360px; background: #F3F6FB; border-radius: 16px; padding: 28px; display: flex; flex-direction: column; gap: 10px; min-width: 0">
+<p style="margin: 0; font-size: 13px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: #0B3A9E">Référence</p>
+<p style="margin: 0; font-family: Jost, sans-serif; font-weight: 500; letter-spacing: -0.01em; font-size: 22px; color: #0E1A33">Pleiades Neo Challenge · Airbus Defence and Space</p>
+<p style="margin: 0; font-size: 15px; line-height: 1.6; color: #4A5872">Projet WEE retenu en 2022 parmi 50 propositions : détection précoce du charançon rouge du palmier par IA sur imagerie très haute résolution.</p>
+</div>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 20px">
+<div style="flex: 1 1 220px; background: #FFFFFF; border: 1px solid #DFE6F1; border-radius: 14px; padding: 24px; display: flex; flex-direction: column; gap: 6px">
+<p style="margin: 0; font-family: Jost, sans-serif; font-weight: 500; letter-spacing: -0.01em; font-size: 20px; color: #0E1A33">Omar Labidi</p>
+<p style="margin: 0; font-size: 14px; color: #4A5872">Co-fondateur, gérant et CTO</p>
+</div>
+<div style="flex: 1 1 220px; background: #FFFFFF; border: 1px solid #DFE6F1; border-radius: 14px; padding: 24px; display: flex; flex-direction: column; gap: 6px">
+<p style="margin: 0; font-family: Jost, sans-serif; font-weight: 500; letter-spacing: -0.01em; font-size: 20px; color: #0E1A33">Mounir Riahi</p>
+<p style="margin: 0; font-size: 14px; color: #4A5872">Associé</p>
+</div>
+<div style="flex: 1 1 220px; background: #FFFFFF; border: 1px solid #DFE6F1; border-radius: 14px; padding: 24px; display: flex; flex-direction: column; gap: 6px">
+<p style="margin: 0; font-family: Jost, sans-serif; font-weight: 500; letter-spacing: -0.01em; font-size: 20px; color: #0E1A33">Souha [Nom]</p>
+<p style="margin: 0; font-size: 14px; color: #4A5872">[Rôle]</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="contact" aria-labelledby="contact-title" style="background: #02040A; color: #EAF1FF; padding: 96px 0 40px">
+<div style="max-width: 1200px; margin: 0 auto; padding: 0 24px; box-sizing: border-box; display: flex; flex-direction: column; gap: 64px">
+<div style="display: flex; flex-wrap: wrap; gap: 40px 64px; align-items: flex-end; justify-content: space-between">
+<div style="flex: 1 1 480px; display: flex; flex-direction: column; gap: 18px; min-width: 0">
+<h2 id="contact-title" style="margin: 0; font-family: Jost, sans-serif; font-weight: 500; letter-spacing: -0.01em; font-size: clamp(36px, 4.4vw, 56px); line-height: 1.1; color: #FFFFFF">Parlons de votre territoire.</h2>
+<p style="margin: 0; font-size: 18px; line-height: 1.65; color: #B9C7E2">Une institution, un programme, un défi climatique : écrivez-nous, nous regarderons ensemble ce que les données peuvent faire.</p>
+</div>
+<a href="mailto:[contact@eocube.ai]" style="display: inline-flex; align-items: center; min-height: 52px; padding: 0 30px; border-radius: 999px; background: #FFFFFF; color: #0B3A9E; font-weight: 600; font-size: 17px; text-decoration: none">[contact@eocube.ai]</a>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 24px 64px; border-top: 1px solid #1A2A4D; padding-top: 32px; font-size: 14px; color: #A9B8D4">
+<address style="font-style: normal; line-height: 1.7; flex: 1 1 300px">Earth Observation Cube<br>16 Cité des Médecins, Avenue Taher Sfar<br>El Manar 2, 2092 Tunis, Tunisie</address>
+<div style="display: flex; flex-direction: column; gap: 6px; flex: 1 1 200px">
+<span>[Téléphone]</span>
+<a href="#" style="color: #A9B8D4">LinkedIn</a>
+</div>
+<p style="margin: 0; flex: 1 1 200px; align-self: flex-end">© 2026 EOCube · eocube.io · eocube.ai</p>
+</div>
+</div>
+</section>
+</div>
+
+<script src="assets/three-eocube.js"></script>
+<script>
+// Scène 3D EOCube : 8 cubes autour de la Terre, rotation sur un axe incliné à 23,4°.
+// Réglages : periode (secondes par tour), inclinaison (degrés), verre ("suit" ou "fixe").
+class DCLogic { constructor() { this.props = { periode: 45, inclinaison: 23.4, verre: 'suit' }; } }
+
+class Component extends DCLogic {
+  renderVals() {
+    if (!this._sc) this._sc = (el) => { if (el && el !== this.cv) { this.cv = el; this.boot(); } };
+    return { setCanvas: this._sc };
+  }
+  componentDidMount() { this.findCanvas(); }
+  componentDidUpdate() { this.findCanvas(); }
+  findCanvas() {
+    if (this.cv || this.dead) return;
+    const el = document.querySelector('canvas[data-eocube]');
+    if (el) { this.cv = el; this.boot(); } else { this.tm2 = setTimeout(() => this.findCanvas(), 80); }
+  }
+  componentWillUnmount() {
+    clearTimeout(this.tm2);
+    this.dead = true;
+    clearTimeout(this.tm);
+    cancelAnimationFrame(this.raf);
+    if (this.ro) this.ro.disconnect();
+    if (this.r) this.r.dispose();
+  }
+  boot() {
+    if (this.dead || this.started) return;
+    if (!window.THREE || !window.THREE.RoundedBoxGeometry) { this.tm = setTimeout(() => this.boot(), 60); return; }
+    this.started = true;
+    try { this.init(); } catch (e) { console.error('[EOCube 3D]', e); }
+  }
+  init() {
+    const T = window.THREE, cv = this.cv, DARK = true;
+    const deg = Math.PI / 180;
+    const r = new T.WebGLRenderer({ canvas: cv, antialias: true, alpha: !DARK, powerPreference: 'high-performance' });
+    this.r = r;
+    r.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
+    r.outputColorSpace = T.SRGBColorSpace;
+    r.toneMapping = T.ACESFilmicToneMapping;
+    r.toneMappingExposure = DARK ? 1.15 : 0.95;
+    r.shadowMap.enabled = true;
+    r.shadowMap.type = T.PCFSoftShadowMap;
+    if (DARK) r.setClearColor(0x02040a, 1); else r.setClearColor(0xffffff, 0);
+
+    const scene = new T.Scene();
+    const cam = new T.PerspectiveCamera(26, 1, 0.1, 300);
+    cam.position.setFromSphericalCoords(11.2, (90 - 30) * deg, 45 * deg);
+    cam.lookAt(0, 0, 0);
+
+    // studio environment for reflections on the cubes and the glass
+    const pm = new T.PMREMGenerator(r);
+    const es = new T.Scene();
+    es.add(new T.Mesh(new T.BoxGeometry(40, 40, 40), new T.MeshBasicMaterial({ color: DARK ? 0x04060c : 0xdde5f0, side: T.BackSide })));
+    const panel = (w, h, p, k, col) => {
+      const m = new T.Mesh(new T.PlaneGeometry(w, h), new T.MeshBasicMaterial({ color: new T.Color(col).multiplyScalar(k), side: T.DoubleSide }));
+      m.position.set(p[0], p[1], p[2]); m.lookAt(0, 0, 0); es.add(m);
+    };
+    panel(10, 5, [-7, 10, 7], DARK ? 9 : 6, '#ffffff');
+    panel(3, 12, [12, 3, -3], DARK ? 2.5 : 3, '#cfe0ff');
+    panel(14, 2, [0, -3, -14], DARK ? 1.5 : 2, '#8fb4ff');
+    panel(6, 6, [8, 8, 10], DARK ? 1.2 : 2, '#ffffff');
+    scene.environment = pm.fromScene(es, 0.03).texture;
+
+    const sun = new T.DirectionalLight(0xfff3e2, DARK ? 3.4 : 2.6);
+    sun.position.set(-5, 7, 4);
+    sun.castShadow = true;
+    sun.shadow.mapSize.set(2048, 2048);
+    sun.shadow.camera.left = -3; sun.shadow.camera.right = 3; sun.shadow.camera.top = 3; sun.shadow.camera.bottom = -3;
+    sun.shadow.camera.near = 1; sun.shadow.camera.far = 20;
+    sun.shadow.bias = -0.0004; sun.shadow.normalBias = 0.02; sun.shadow.radius = 4;
+    scene.add(sun);
+    scene.add(new T.HemisphereLight(0xbcd4ff, 0x0b1630, DARK ? 0.08 : 0.3));
+
+    if (DARK) {
+      const N = 2200, pos = new Float32Array(N * 3), col = new Float32Array(N * 3);
+      for (let i = 0; i < N; i++) {
+        const u = Math.random() * 2 - 1, a = Math.random() * Math.PI * 2, s = Math.sqrt(1 - u * u);
+        pos[i * 3] = 120 * s * Math.cos(a); pos[i * 3 + 1] = 120 * u; pos[i * 3 + 2] = 120 * s * Math.sin(a);
+        const b = 0.25 + Math.pow(Math.random(), 4) * 0.9, t = Math.random();
+        col[i * 3] = b * (0.85 + 0.15 * t); col[i * 3 + 1] = b * 0.92; col[i * 3 + 2] = b;
+      }
+      const g = new T.BufferGeometry();
+      g.setAttribute('position', new T.BufferAttribute(pos, 3));
+      g.setAttribute('color', new T.BufferAttribute(col, 3));
+      this.stars = new T.Points(g, new T.PointsMaterial({ size: 1.6, sizeAttenuation: false, vertexColors: true, transparent: true, depthWrite: false }));
+      scene.add(this.stars);
+    }
+
+    // axe incliné (comme la Terre) puis rotation propre
+    const tilt = new T.Group(); scene.add(tilt);
+    const spin = new T.Group(); tilt.add(spin);
+
+    const geo = new T.RoundedBoxGeometry(1, 1, 1, 5, 0.06);
+    const glassMat = new T.MeshPhysicalMaterial({
+      color: 0xffffff, transmission: 1, roughness: 0.03, metalness: 0, ior: 1.5, thickness: 0.8,
+      attenuationColor: new T.Color('#BcD8FF'), attenuationDistance: 2.2,
+      clearcoat: 1, clearcoatRoughness: 0.02, envMapIntensity: 1.4, specularIntensity: 1
+    });
+    const c = 0.8, cubes = [];
+    for (const x of [-1, 1]) for (const y of [-1, 1]) for (const z of [-1, 1]) {
+      const m = new T.MeshPhysicalMaterial({ color: '#4F86D6', roughness: 0.28, metalness: 0, clearcoat: 1, clearcoatRoughness: 0.08, envMapIntensity: 0.55 });
+      const op = new T.Mesh(geo, m);
+      op.position.set(x * c, y * c, z * c); op.castShadow = true; op.receiveShadow = true;
+      const gl = new T.Mesh(geo, glassMat);
+      gl.position.copy(op.position); gl.scale.setScalar(0.998); gl.visible = false;
+      spin.add(op); spin.add(gl);
+      cubes.push({ op, gl, fixed: x > 0 && y > 0 && z > 0 });
+    }
+
+    // la Terre au centre
+    const L = new T.TextureLoader();
+    const map = L.load('assets/earth.jpg'); map.colorSpace = T.SRGBColorSpace; map.anisotropy = r.capabilities.getMaxAnisotropy();
+    const rough = L.load('assets/earth-rough.jpg');
+    const em = new T.MeshStandardMaterial({ map, roughnessMap: rough, roughness: 1, metalness: 0, envMapIntensity: DARK ? 0.6 : 0.35, emissive: 0xffffff, emissiveMap: map, emissiveIntensity: DARK ? 0.32 : 0.12 });
+    em.onBeforeCompile = (sh) => {
+      sh.fragmentShader = sh.fragmentShader.replace('#include <emissivemap_fragment>',
+        '#include <emissivemap_fragment>\n float fr = 1.0 - abs(dot(normal, normalize(vViewPosition)));\n totalEmissiveRadiance += vec3(0.22, 0.48, 1.0) * pow(fr, 3.0) * 0.9;');
+    };
+    const earth = new T.Mesh(new T.SphereGeometry(0.5, 128, 96), em);
+    earth.castShadow = true; earth.receiveShadow = false;
+    earth.rotation.y = -1.9; // l'Afrique et la Méditerranée face à nous au départ
+    spin.add(earth);
+
+    const camDir = new T.Vector3(), tmp = new T.Vector3();
+    const size = () => {
+      const w = cv.clientWidth, h = cv.clientHeight;
+      if (!w || !h) return;
+      r.setSize(w, h, false); cam.aspect = w / h;
+      const k = Math.max(1, Math.pow(1.05 / cam.aspect, 0.6));
+      cam.position.setFromSphericalCoords(11.2 * k, (90 - 30) * deg, 45 * deg);
+      cam.lookAt(0, 0, 0);
+      cam.updateProjectionMatrix();
+      camDir.copy(cam.position).normalize();
+    };
+    size();
+    this.ro = new ResizeObserver(size); this.ro.observe(cv);
+
+    const sstep = (a, b, x) => { const t = Math.min(1, Math.max(0, (x - a) / (b - a))); return t * t * (3 - 2 * t); };
+    let last = performance.now();
+    const loop = (now) => {
+      if (this.dead) return;
+      const dt = Math.min(0.05, (now - last) / 1000); last = now;
+      const P = this.props || {};
+      const period = Math.max(5, Number(P.periode ?? 45));
+      const tiltDeg = Number(P.inclinaison ?? 23.4);
+      const follow = (P.verre ?? 'suit') === 'suit';
+      tilt.rotation.z = -tiltDeg * deg;
+      spin.rotation.y += dt * 2 * Math.PI / period;
+      if (this.stars) this.stars.rotation.y += dt * 2 * Math.PI / (period * 40);
+
+      // quel cube est le plus proche de l'observateur ?
+      const zs = cubes.map((k) => { k.op.getWorldPosition(tmp); return tmp.dot(camDir); });
+      const w = new Array(8).fill(0);
+      if (follow) {
+        const idx = zs.map((z, i) => i).sort((a, b) => zs[b] - zs[a]);
+        const s = sstep(0, 0.28, zs[idx[0]] - zs[idx[1]]);
+        w[idx[0]] = 0.5 + 0.5 * s; w[idx[1]] = 0.5 - 0.5 * s;
+      } else {
+        cubes.forEach((k, i) => { if (k.fixed) w[i] = 1; });
+      }
+      cubes.forEach((k, i) => {
+        const a = w[i];
+        k.gl.visible = a > 0.004;
+        k.op.visible = a < 0.996;
+        const tr = a > 0.004;
+        if (k.op.material.transparent !== tr) { k.op.material.transparent = tr; k.op.material.depthWrite = !tr; k.op.material.needsUpdate = true; }
+        k.op.material.opacity = 1 - a;
+        k.op.castShadow = a < 0.5;
+      });
+      r.render(scene, cam);
+      this.raf = requestAnimationFrame(loop);
+    };
+    this.raf = requestAnimationFrame(loop);
+  }
+}
+
+
+new Component().componentDidMount();
+</script>
+</body>
+</html>
